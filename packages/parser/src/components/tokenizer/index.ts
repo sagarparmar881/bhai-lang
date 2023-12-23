@@ -61,7 +61,7 @@ export default class TokenizerImpl implements Tokenizer {
       };
     }
 
-    throw new SyntaxError(`Kya kar rha hai tu??...Unexpected token: "${string[0]}"`);
+    throw new SyntaxError(`Oye Babuchak, aa su kare che??...Unexpected token: "${string[0]}"`);
   }
 
   _matched(regex: RegExp, string: string) {

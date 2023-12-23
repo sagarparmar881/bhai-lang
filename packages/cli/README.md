@@ -28,8 +28,8 @@ You can also try out your code on <a href="https://bhailang.js.org/#playground">
 
 ```
 jo baka
-  bol bhai "Hello bhai";
-bye bhai
+  bol baka "Hello bhai";
+aavje baka
 
 ```
 
@@ -50,7 +50,7 @@ hello bhai
 <h2 align="center">Documentation</h2>
 
 <h3 align="center">General</h3>
-<p align="center"><code>jo baka</code> is the entrypoint for the program and all program must end with <code>bye bhai</code>. Anything outside of it will be ignored.</p>
+<p align="center"><code>jo baka</code> is the entrypoint for the program and all program must end with <code>aavje baka</code>. Anything outside of it will be ignored.</p>
 
 ```
 
@@ -58,94 +58,94 @@ This will be ignored
 
 jo baka
 // Write code here
-bye bhai
+aavje baka
 
 This too
 ```
 
 <h3 align="center">Variables</h3>
-<p align="center">Variables can be declared using <code>bhai ye hai</code>.</p>
+<p align="center">Variables can be declared using <code>baka aa che</code>.</p>
 
 ```
 
 jo baka
-  bhai ye hai a = 10;
-  bhai ye hai b = "two";
-  bhai ye hai c = 15;
+  baka aa che a = 10;
+  baka aa che b = "two";
+  baka aa che c = 15;
   a = a + 1;
   b = 21;
   c *= 2;
-bye bhai
+aavje baka
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nalla. sahi and galat</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nakkamo. sahi and galat</code> are the boolean values.</p>
 
 ```
 
 jo baka
-  bhai ye hai a = 10;
-  bhai ye hai b = 10 + (15*20);
-  bhai ye hai c = "two";
-  bhai ye hai d = 'ok';
-  bhai ye hai e = nalla;
-  bhai ye hai f = sahi;
-  bhai ye hai g = galat;
-bye bhai
+  baka aa che a = 10;
+  baka aa che b = 10 + (15*20);
+  baka aa che c = "two";
+  baka aa che d = 'ok';
+  baka aa che e = nakkamo;
+  baka aa che f = sahi;
+  baka aa che g = galat;
+aavje baka
 ```
 
 <h3 align="center">Built-ins</h3>
-<p align="center">Use <code>bol bhai</code> to print anything to console.</p>
+<p align="center">Use <code>bol baka</code> to print anything to console.</p>
 
 ```
 
 jo baka
-  bol bhai "Hello World";
-  bhai ye hai a = 10;
+  bol baka "Kem Party!";
+  baka aa che a = 10;
   {
-    bhai ye hai b = 20;
-    bol bhai a + b;
+    baka aa che b = 20;
+    bol baka a + b;
   }
-  bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+  bol baka 5, 'ok', nakkamo , sahi , galat;
+aavje baka
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports simple if else construct , <code>agar bhai</code> block will execute if condition is <code>sahi</code> and <code>warna bhai</code> block will execute if condition is <code>galat</code>.</p>
+<p align="center">Bhailang supports simple if else construct , <code>jo agar</code> block will execute if condition is <code>sahi</code> and <code>nahi toh</code> block will execute if condition is <code>galat</code>.</p>
 
 ```
 
 jo baka
-  bhai ye hai a = 10;
-  agar bhai (a < 25) {
-   bol bhai "a is less than 25";
-  } warna bhai {
-   bol bhai "a is greater than or equal to 25";
+  baka aa che a = 10;
+  jo agar (a < 25) {
+   bol baka "a is less than 25";
+  } nahi toh {
+   bol baka "a is greater than or equal to 25";
   }
-bye bhai
+aavje baka
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jab tak bhai</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jya sudhi</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
 
 
 ```
 
 jo baka
-  bhai ye hai a = 0;
-  jab tak bhai (a < 10) {
+  baka aa che a = 0;
+  jya sudhi (a < 10) {
    a += 1;
-   agar bhai (a == 5) {
-    bol bhai "andar se bol bhai ", a;
+   jo agar (a == 5) {
+    bol baka "andar se bol baka ", a;
     agla dekh bhai;
    }
-   agar bhai (a == 6) {
+   jo agar (a == 6) {
     bas kar bhai;
    }
-   bol bhai a;
+   bol baka a;
   }
-  bol bhai "done";
-bye bhai
+  bol baka "done";
+aavje baka
 ```
 
 

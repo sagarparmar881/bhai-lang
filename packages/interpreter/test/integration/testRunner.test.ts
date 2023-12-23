@@ -42,13 +42,13 @@ NegativeTestCases.forEach((testCase) => {
 test("test redeclaring & printing variables in different scopes", () => {
   expect(() =>
     interpreter.interpret(`jo baka;
-    bhai ye hai a = 4;
+    baka aa che a = 4;
     {
-      bhai ye hai a = 90;
-      bol bhai a;
+      baka aa che a = 90;
+      bol baka a;
     }
-    bol bhai a;
-    bye bhai;`)
+    bol baka a;
+    aavje baka;`)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("90");
   expect(console.log).toHaveBeenCalledWith("4");
@@ -57,13 +57,13 @@ test("test redeclaring & printing variables in different scopes", () => {
 test("test assigning variable in parent scope", () => {
   expect(() =>
     interpreter.interpret(`jo baka;
-    bhai ye hai a = 4;
+    baka aa che a = 4;
     {
       a = 90;
-      bol bhai a;
+      bol baka a;
     }
-    bol bhai a;
-    bye bhai;`)
+    bol baka a;
+    aavje baka;`)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("90");
   expect(console.log).toHaveBeenCalledWith("90");
@@ -72,12 +72,12 @@ test("test assigning variable in parent scope", () => {
 test("test accessing variable in parent scope", () => {
   expect(() =>
     interpreter.interpret(`jo baka;
-    bhai ye hai a = 4;
+    baka aa che a = 4;
     {
-      bol bhai a;
+      bol baka a;
     }
-    bol bhai a;
-    bye bhai;`)
+    bol baka a;
+    aavje baka;`)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("4");
   expect(console.log).toHaveBeenCalledWith("4");
@@ -87,12 +87,12 @@ test("whileStatement test with 2 times loop, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka;
-    bhai ye hai a = 0;
-    jab tak bhai (a < 2) {
-      bol bhai "bhai";
+    baka aa che a = 0;
+    jya sudhi (a < 2) {
+      bol baka "bhai";
       a += 1;
     }
-    bye bhai;`)
+    aavje baka;`)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("bhai");
   expect(console.log).toHaveBeenCalledWith("bhai");
@@ -102,15 +102,15 @@ test("whileStatement test with nested loops - 2, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka;
-    bhai ye hai a = 0, b = 0;
-    jab tak bhai (a < 2) {
-      jab tak bhai (b < 1) {
-        bol bhai "bhai";
+    baka aa che a = 0, b = 0;
+    jya sudhi (a < 2) {
+      jya sudhi (b < 1) {
+        bol baka "bhai";
         b += 1;
       }
       a += 1;
     }
-    bye bhai;
+    aavje baka;
     `)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("bhai");
@@ -120,18 +120,18 @@ test("whileStatement test with nested loops - 3, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka;
-    bhai ye hai a = 0;
-    jab tak bhai (a < 2) {
-      bhai ye hai b = 0;
-      jab tak bhai (b < 2) {
-        bol bhai "bhai";
+    baka aa che a = 0;
+    jya sudhi (a < 2) {
+      baka aa che b = 0;
+      jya sudhi (b < 2) {
+        bol baka "bhai";
         b += 1;
-        agar bhai (b == 1)
+        jo agar (b == 1)
           bas kar bhai;
       }
       a += 1;
     }
-    bye bhai;
+    aavje baka;
     `)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("bhai");
@@ -143,16 +143,16 @@ test("whileStatement test with nested loops - 4, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
-      bol bhai a;
+    baka aa che a = 0;
+    jya sudhi (a < 10) {
+      bol baka a;
       a += 1;
-      agar bhai (a == 6) {
+      jo agar (a == 6) {
         bas kar bhai;
       }
     }
-    bol bhai "done";
-    bye bhai
+    bol baka "done";
+    aavje baka
     `)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("0");
@@ -167,15 +167,15 @@ test("whileStatement test with nested loops - 5, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
-      bol bhai a;
+    baka aa che a = 0;
+    jya sudhi (a < 10) {
+      bol baka a;
       a += 1;
-      agar bhai (a == 6)
+      jo agar (a == 6)
         bas kar bhai;
     }
-    bol bhai "done";
-    bye bhai
+    bol baka "done";
+    aavje baka
     `)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("0");
@@ -190,17 +190,17 @@ test("whileStatement test with nested loops - 6, should success", () => {
   expect(() =>
     interpreter.interpret(`
     jo baka
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
-      bol bhai a;
+    baka aa che a = 0;
+    jya sudhi (a < 10) {
+      bol baka a;
       a += 1;
-      agar bhai (a == 3) {
+      jo agar (a == 3) {
         bas kar bhai;
       }
-      bol bhai "2 baar hi chapunga";
+      bol baka "2 baar hi chapunga";
     }
-    bol bhai "done";
-    bye bhai
+    bol baka "done";
+    aavje baka
     `)
   ).not.toThrowError();
   expect(console.log).toHaveBeenCalledWith("0");
@@ -215,10 +215,10 @@ test("whileStatement test with infinite loop, should throw runtime exception aft
     interpreter.interpret(`
     jo baka
     
-    jab tak bhai (sahi) {
-      bol bhai "bhai";
+    jya sudhi (sahi) {
+      bol baka "bhai";
     }
-    bye bhai;
+    aavje baka;
     
     `)
   ).toThrowError(RuntimeException);
@@ -231,17 +231,17 @@ test("if-else ladders one after the other, should be evaluated separately", () =
   expect(() =>
     interpreter.interpret(`
     jo baka
-    bhai ye hai x = 6;
-    agar bhai (x < 5) {
-      bol bhai "x < 5";
-    } nahi to bhai (x < 8) {
-      bol bhai "x < 8";
-    } agar bhai (x < 4) {
-      bol bhai "x < 4";
-    } warna bhai {
-      bol bhai "x > 4";
+    baka aa che x = 6;
+    jo agar (x < 5) {
+      bol baka "x < 5";
+    } athva toh (x < 8) {
+      bol baka "x < 8";
+    } jo agar (x < 4) {
+      bol baka "x < 4";
+    } nahi toh {
+      bol baka "x > 4";
     }
-    bye bhai;
+    aavje baka;
     
     `)
   ).not.toThrowError();
@@ -253,16 +253,16 @@ test("if-else ladders one after the other, should be evaluated separately", () =
 // test("jest", () => {
 //     interpreter.interpret(`
 //     jo baka
-//     bhai ye hai a = 0;
-//     jab tak bhai (a < 10) {
-//       bol bhai a;
+//     baka aa che a = 0;
+//     jya sudhi (a < 10) {
+//       bol baka a;
 //       a += 1;
-//       agar bhai (a == 3) {
+//       jo agar (a == 3) {
 //         bas kar bhai;
 //       }
-//       bol bhai "2 baar hi chapunga";
+//       bol baka "2 baar hi chapunga";
 //     }
-//     bol bhai "done";
-//     bye bhai
+//     bol baka "done";
+//     aavje baka
 //     `);
 // });

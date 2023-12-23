@@ -3,19 +3,19 @@ export const TokenTypes = {
 
   HI_BHAI_TYPE: "jo baka",
 
-  BYE_BHAI_TYPE: "bye bhai",
+  BYE_BHAI_TYPE: "aavje baka",
 
-  BOL_BHAI_TYPE: "bol bhai",
+  BOL_BHAI_TYPE: "bol baka",
 
-  BHAI_YE_HAI_TYPE: "bhai ye hai",
+  BHAI_YE_HAI_TYPE: "baka aa che",
 
-  AGAR_BHAI: "agar bhai",
+  AGAR_BHAI: "jo agar",
 
-  WARNA_BHAI: "warna bhai",
+  WARNA_BHAI: "nahi toh",
 
-  NAHI_TO_BHAI: "nahi to bhai",
+  NAHI_TO_BHAI: "athva toh",
 
-  JAB_TAK_BHAI: "jab tak bhai",
+  JAB_TAK_BHAI: "jya sudhi",
 
   BAS_KAR_BHAI: "bas kar bhai",
 
@@ -79,15 +79,15 @@ export const SPEC = [
   { regex: /^,/, tokenType: TokenTypes.COMMA_TYPE },
 
   //Keywords
-  { regex: /^\bhi bhai\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
-  { regex: /^\bbye bhai\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
-  { regex: /^\bbol bhai\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
-  { regex: /^\bbhai ye hai\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
-  { regex: /^\bagar bhai\b/, tokenType: TokenTypes.AGAR_BHAI },
-  { regex: /^\bnahi to bhai\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
-  { regex: /^\bwarna bhai\b/, tokenType: TokenTypes.WARNA_BHAI },
-  { regex: /^\bnalla\b/, tokenType: TokenTypes.NALLA_TYPE },
-  { regex: /^\bjab tak bhai\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
+  { regex: /^\bjo baka\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
+  { regex: /^\baavje baka\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
+  { regex: /^\bbol baka\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
+  { regex: /^\bbaka aa che\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
+  { regex: /^\bjo agar\b/, tokenType: TokenTypes.AGAR_BHAI },
+  { regex: /^\bathva toh\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
+  { regex: /^\bnahi toh\b/, tokenType: TokenTypes.WARNA_BHAI },
+  { regex: /^\bnakkamo\b/, tokenType: TokenTypes.NALLA_TYPE },
+  { regex: /^\bjya sudhi\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
   { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
   { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
 

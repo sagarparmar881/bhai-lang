@@ -4,7 +4,7 @@ export const StatementTests = [
     name: "empty init statement test, should success",
     input: `
       jo baka
-      bye bhai
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[]}}`,
   },
@@ -12,7 +12,7 @@ export const StatementTests = [
     name: "init statement test with semi colon, should success",
     input: `
       jo baka;
-      bye bhai;
+      aavje baka;
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[]}}`,
   },
@@ -20,7 +20,7 @@ export const StatementTests = [
     name: "init statement test with semi colon - 2, should success",
     input: `
       jo baka;
-      bye bhai
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[]}}`,
   },
@@ -30,7 +30,7 @@ export const StatementTests = [
       some random characters
       random random random
       jo baka
-      bye bhai;
+      aavje baka;
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[]}}`,
   },
@@ -42,7 +42,7 @@ export const StatementTests = [
       ;
       ;
       ;;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"EmptyStatement\"},{\"type\":\"EmptyStatement\"},{\"type\":\"EmptyStatement\"}]}}`,
   },
@@ -52,7 +52,7 @@ export const StatementTests = [
     input: `
       jo baka
       {}
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"BlockStatement\",\"body\":[]}]}}`,
   },
@@ -61,7 +61,7 @@ export const StatementTests = [
     input: `
       jo baka;
       {};
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"BlockStatement\",\"body\":[]}]}}`,
   },
@@ -72,7 +72,7 @@ export const StatementTests = [
       {
         naam = 4;
       }
-      bye bhai;
+      aavje baka;
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"BlockStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"naam\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}}}]}]}}`,
   },
@@ -81,9 +81,9 @@ export const StatementTests = [
     input: `
       jo baka
       {
-        bhai ye hai a = 4;
+        baka aa che a = 4;
       }
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"BlockStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NumericLiteral\",\"value\":4}}]}]}]}}`,
   },
@@ -92,8 +92,8 @@ export const StatementTests = [
     name: "print statement test with string printing, should success",
     input: `
       jo baka
-      bol bhai "puff...";
-      bye bhai
+      bol baka "puff...";
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"PrintStatement\",\"expressions\":[{\"type\":\"StringLiteral\",\"value\":\"puff...\"}]}]}}`,
   },
@@ -101,8 +101,8 @@ export const StatementTests = [
     name: "print statement test with number printing, should success",
     input: `
       jo baka
-      bol bhai 478;
-      bye bhai
+      bol baka 478;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"PrintStatement\",\"expressions\":[{\"type\":\"NumericLiteral\",\"value\":478}]}]}}`,
   },
@@ -110,8 +110,8 @@ export const StatementTests = [
     name: "print statement test with boolean printing, should success",
     input: `
       jo baka
-      bol bhai sahi, galat;
-      bye bhai
+      bol baka sahi, galat;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"PrintStatement\",\"expressions\":[{\"type\":\"BooleanLiteral\",\"value\":\"sahi\"},{\"type\":\"BooleanLiteral\",\"value\":\"galat\"}]}]}}`,
   },
@@ -119,36 +119,36 @@ export const StatementTests = [
     name: "print statement test with identifier printing, should success",
     input: `
       jo baka
-      bol bhai a, b, c;
-      bye bhai
+      bol baka a, b, c;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"PrintStatement\",\"expressions\":[{\"type\":\"IdentifierExpression\",\"name\":\"a\"},{\"type\":\"IdentifierExpression\",\"name\":\"b\"},{\"type\":\"IdentifierExpression\",\"name\":\"c\"}]}]}}`,
   },
   {
-    name: "print statement test with nalla printing, should success",
+    name: "print statement test with nakkamo printing, should success",
     input: `
       jo baka
-      bol bhai nalla;
-      bye bhai
+      bol baka nakkamo;
+      aavje baka
     `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"NullLiteral","value":"nalla"}]}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"NullLiteral","value":"nakkamo"}]}]}}`,
   },
   {
-    name: "print statement test with variable nalla printing, should success",
+    name: "print statement test with variable nakkamo printing, should success",
     input: `
       jo baka
-      bhai ye hai a = nalla;
-      bol bhai a;
-      bye bhai
+      baka aa che a = nakkamo;
+      bol baka a;
+      aavje baka
     `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nalla"}}]},{"type":"PrintStatement","expressions":[{"type":"IdentifierExpression","name":"a"}]}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nakkamo"}}]},{"type":"PrintStatement","expressions":[{"type":"IdentifierExpression","name":"a"}]}]}}`,
   },
   {
     name: "print statement test with logical AND, should success",
     input: `
       jo baka
-      bol bhai a && b;
-      bye bhai
+      bol baka a && b;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"LogicalExpression","operator":"&&","left":{"type":"IdentifierExpression","name":"a"},"right":{"type":"IdentifierExpression","name":"b"}}]}]}}`,
   },
@@ -156,8 +156,8 @@ export const StatementTests = [
     name: "print statement test with assignment, should success",
     input: `
       jo baka
-      bol bhai a = 9;
-      bye bhai
+      bol baka a = 9;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"a"},"right":{"type":"NumericLiteral","value":9}}]}]}}`,
   },
@@ -165,8 +165,8 @@ export const StatementTests = [
     name: "print statement test with logical OR, should success",
     input: `
       jo baka
-      bol bhai 9 || 90;
-      bye bhai
+      bol baka 9 || 90;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"LogicalExpression","operator":"||","left":{"type":"NumericLiteral","value":9},"right":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
@@ -174,8 +174,8 @@ export const StatementTests = [
     name: "print statement test with equality operator, should success",
     input: `
       jo baka
-      bol bhai 9 == 90;
-      bye bhai
+      bol baka 9 == 90;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"BinaryExpression","operator":"==","left":{"type":"NumericLiteral","value":9},"right":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
@@ -184,26 +184,26 @@ export const StatementTests = [
     name: "variable statement test with basic variable declaration, should success",
     input: `
       jo baka
-      bhai ye hai a, b, c;
-      bye bhai
+      baka aa che a, b, c;
+      aavje baka
     `,
-    output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nalla\"}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nalla\"}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"c\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nalla\"}}]}]}}`,
+    output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nakkamo\"}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nakkamo\"}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"c\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nakkamo\"}}]}]}}`,
   },
   {
     name: "variable statement test with basic variable declaration and initialisation, should success",
     input: `
       jo baka
-      bhai ye hai a = 10, b;
-      bye bhai
+      baka aa che a = 10, b;
+      aavje baka
     `,
-    output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NumericLiteral\",\"value\":10}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nalla\"}}]}]}}`,
+    output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NumericLiteral\",\"value\":10}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"init\":{\"type\":\"NullLiteral\",\"value\":\"nakkamo\"}}]}]}}`,
   },
   {
     name: "variable statement test with multiple variable initialisation, should success",
     input: `
       jo baka
-      bhai ye hai a = 10, b = 5;
-      bye bhai
+      baka aa che a = 10, b = 5;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"NumericLiteral\",\"value\":10}},{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"init\":{\"type\":\"NumericLiteral\",\"value\":5}}]}]}}`,
   },
@@ -211,8 +211,8 @@ export const StatementTests = [
     name: "variable statement test with multiple variable initialisation with same value, should success",
     input: `
       jo baka
-      bhai ye hai a = b = 5;
-      bye bhai
+      baka aa che a = b = 5;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"b\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":5}}}]}]}}`,
   },
@@ -220,28 +220,28 @@ export const StatementTests = [
     name: "variable statement test with variable initialisation with some expression, should success",
     input: `
       jo baka
-      bhai ye hai a = 7 + 90;
-      bye bhai
+      baka aa che a = 7 + 90;
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"VariableStatement\",\"declarations\":[{\"type\":\"VariableDeclaration\",\"id\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"init\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"NumericLiteral\",\"value\":7},\"right\":{\"type\":\"NumericLiteral\",\"value\":90}}}]}]}}`,
   },
   {
-    name: "variable statement test with variable initialisation with nalla literal, should success",
+    name: "variable statement test with variable initialisation with nakkamo literal, should success",
     input: `
       jo baka
-      bhai ye hai a = nalla;
-      bye bhai
+      baka aa che a = nakkamo;
+      aavje baka
     `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nalla"}}]}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nakkamo"}}]}]}}`,
   },
   {
-    name: "variable statement test with variable initialisation with nalla literal, should success",
+    name: "variable statement test with variable initialisation with nakkamo literal, should success",
     input: `
       jo baka
-      bhai ye hai a = nalla;
-      bye bhai
+      baka aa che a = nakkamo;
+      aavje baka
     `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nalla"}}]}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NullLiteral","value":"nakkamo"}}]}]}}`,
   },
 ];
 
@@ -252,7 +252,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a = 4;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}}}]}}`,
   },
@@ -261,7 +261,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a *= 4;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"*=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}}}]}}`,
   },
@@ -270,7 +270,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a = 1.2;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":1.2}}}]}}`,
   },
@@ -279,7 +279,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a = -1.2;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":-1.2}}}]}}`,
   },
@@ -288,7 +288,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a = .6;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":0.6}}}]}}`,
   },
@@ -297,7 +297,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       a = -.6;
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"AssignmentExpression\",\"operator\":\"=\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":-0.6}}}]}}`,
   },
@@ -307,7 +307,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       (a + 4);
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}}}]}}`,
   },
@@ -316,7 +316,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       (a + 4) * 10 + (5 - 4);
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"BinaryExpression\",\"operator\":\"*\",\"left\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}},\"right\":{\"type\":\"NumericLiteral\",\"value\":10}},\"right\":{\"type\":\"BinaryExpression\",\"operator\":\"-\",\"left\":{\"type\":\"NumericLiteral\",\"value\":5},\"right\":{\"type\":\"NumericLiteral\",\"value\":4}}}}]}}`,
   },
@@ -325,7 +325,7 @@ export const ExpressionsTests = [
     input: `
       jo baka
       (a * (4 + 8) + 10);
-      bye bhai
+      aavje baka
     `,
     output: `{\"type\":\"Program\",\"body\":{\"type\":\"InitStatement\",\"body\":[{\"type\":\"ExpressionStatement\",\"expression\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"BinaryExpression\",\"operator\":\"*\",\"left\":{\"type\":\"IdentifierExpression\",\"name\":\"a\"},\"right\":{\"type\":\"BinaryExpression\",\"operator\":\"+\",\"left\":{\"type\":\"NumericLiteral\",\"value\":4},\"right\":{\"type\":\"NumericLiteral\",\"value\":8}}},\"right\":{\"type\":\"NumericLiteral\",\"value\":10}}}]}}`,
   },
@@ -334,7 +334,7 @@ export const ExpressionsTests = [
     input: `
     jo baka
     (x = 9);
-    bye bhai;
+    aavje baka;
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}}`,
   },
@@ -343,53 +343,53 @@ export const ExpressionsTests = [
     input: `
     jo baka
     (x >= 9);
-    bye bhai;
+    aavje baka;
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}}`,
   },
-  // nalla and boolean expression test
+  // nakkamo and boolean expression test
   {
-    name: "complex expression test with one nalla operand, should success",
+    name: "complex expression test with one nakkamo operand, should success",
     input: `
         jo baka
-        (nalla * (4 + 8 + 10));
-        bye bhai
+        (nakkamo * (4 + 8 + 10));
+        aavje baka
       `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"NullLiteral","value":"nalla"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"NumericLiteral","value":4},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"NullLiteral","value":"nakkamo"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"NumericLiteral","value":4},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
   },
   {
-    name: "complex expression test with one nalla operand and one boolean operand, should success",
+    name: "complex expression test with one nakkamo operand and one boolean operand, should success",
     input: `
         jo baka
-        (nalla * (sahi + 8 + 10));
-        bye bhai
+        (nakkamo * (sahi + 8 + 10));
+        aavje baka
       `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"NullLiteral","value":"nalla"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"NullLiteral","value":"nakkamo"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
   },
   {
-    name: "complex expression test with one nalla operand and one boolean operand - 2, should success",
+    name: "complex expression test with one nakkamo operand and one boolean operand - 2, should success",
     input: `
         jo baka
-        (sahi * (nalla + 8 + 10));
-        bye bhai
+        (sahi * (nakkamo + 8 + 10));
+        aavje baka
       `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nalla"},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nakkamo"},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
   },
   {
-    name: "complex expression test with one nalla operand and one boolean operand - 3, should success",
+    name: "complex expression test with one nakkamo operand and one boolean operand - 3, should success",
     input: `
         jo baka
-        (nalla + sahi);
-        bye bhai
+        (nakkamo + sahi);
+        aavje baka
       `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nalla"},"right":{"type":"BooleanLiteral","value":"sahi"}}}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nakkamo"},"right":{"type":"BooleanLiteral","value":"sahi"}}}]}}`,
   },
   {
     name: "complex expression test with one boolean operand, should success",
     input: `
         jo baka
         (sahi * (4 + 8 + 10));
-        bye bhai
+        aavje baka
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BinaryExpression","operator":"+","left":{"type":"BinaryExpression","operator":"+","left":{"type":"NumericLiteral","value":4},"right":{"type":"NumericLiteral","value":8}},"right":{"type":"NumericLiteral","value":10}}}}]}}`,
   },
@@ -398,7 +398,7 @@ export const ExpressionsTests = [
     input: `
         jo baka
         sahi + galat;
-        bye bhai
+        aavje baka
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"+","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}}}]}}`,
   },
@@ -407,7 +407,7 @@ export const ExpressionsTests = [
     input: `
         jo baka
         sahi * galat;
-        bye bhai
+        aavje baka
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"*","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}}}]}}`,
   },
@@ -416,26 +416,26 @@ export const ExpressionsTests = [
     input: `
         jo baka
         sahi / galat;
-        bye bhai
+        aavje baka
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":"/","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}}}]}}`,
   },
   {
-    name: "print statement test with expression containing nalla, should success",
+    name: "print statement test with expression containing nakkamo, should success",
     input: `
         jo baka
-        bol bhai nalla + 5;
-        bye bhai;
+        bol baka nakkamo + 5;
+        aavje baka;
       `,
-    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nalla"},"right":{"type":"NumericLiteral","value":5}}]}]}}`,
+    output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"PrintStatement","expressions":[{"type":"BinaryExpression","operator":"+","left":{"type":"NullLiteral","value":"nakkamo"},"right":{"type":"NumericLiteral","value":5}}]}]}}`,
   },
   // logical expression test
   {
     name: `logical "&&" test with sahi galat, should success`,
     input: `
         jo baka
-        agar bhai (sahi && galat);
-        bye bhai;
+        jo agar (sahi && galat);
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"&&","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
@@ -443,8 +443,8 @@ export const ExpressionsTests = [
     name: `logical "&&" test with expression, should success`,
     input: `
         jo baka
-        agar bhai (a + b && d);
-        bye bhai;
+        jo agar (a + b && d);
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"&&","left":{"type":"BinaryExpression","operator":"+","left":{"type":"IdentifierExpression","name":"a"},"right":{"type":"IdentifierExpression","name":"b"}},"right":{"type":"IdentifierExpression","name":"d"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
@@ -452,8 +452,8 @@ export const ExpressionsTests = [
     name: `logical "&&" test in variable declaration, should success`,
     input: `
         jo baka
-        bhai ye hai a = b && d;
-        bye bhai;
+        baka aa che a = b && d;
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"LogicalExpression","operator":"&&","left":{"type":"IdentifierExpression","name":"b"},"right":{"type":"IdentifierExpression","name":"d"}}}]}]}}`,
   },
@@ -462,8 +462,8 @@ export const ExpressionsTests = [
     name: `logical "||" test with sahi galat, should success`,
     input: `
         jo baka
-        agar bhai (sahi || galat);
-        bye bhai;
+        jo agar (sahi || galat);
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"||","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
@@ -471,8 +471,8 @@ export const ExpressionsTests = [
     name: `logical "||" test with expression, should success`,
     input: `
         jo baka
-        agar bhai (a + b || d);
-        bye bhai;
+        jo agar (a + b || d);
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"||","left":{"type":"BinaryExpression","operator":"+","left":{"type":"IdentifierExpression","name":"a"},"right":{"type":"IdentifierExpression","name":"b"}},"right":{"type":"IdentifierExpression","name":"d"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
@@ -480,8 +480,8 @@ export const ExpressionsTests = [
     name: `logical "||" test in variable declaration, should success`,
     input: `
         jo baka
-        bhai ye hai a = b || d;
-        bye bhai;
+        baka aa che a = b || d;
+        aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"LogicalExpression","operator":"||","left":{"type":"IdentifierExpression","name":"b"},"right":{"type":"IdentifierExpression","name":"d"}}}]}]}}`,
   },
@@ -489,8 +489,8 @@ export const ExpressionsTests = [
     name: `identifier name starting with "sahi", should success`,
     input: `
       jo baka
-      bhai ye hai sahiValue = sahi;
-      bye bhai
+      baka aa che sahiValue = sahi;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"sahiValue"},"init":{"type":"BooleanLiteral","value":"sahi"}}]}]}}`,
   },
@@ -498,8 +498,8 @@ export const ExpressionsTests = [
     name: `identifier name starting with "galat", should success`,
     input: `
       jo baka
-      bhai ye hai galatValue = 10;
-      bye bhai
+      baka aa che galatValue = 10;
+      aavje baka
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"galatValue"},"init":{"type":"NumericLiteral","value":10}}]}]}}`,
   },
@@ -510,9 +510,9 @@ export const IfStatementTests = [
     name: "if statement success test - 1: only if",
     input: `
     jo baka
-    agar bhai (sahi) {
+    jo agar (sahi) {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[]}]}}`,
   },
@@ -520,11 +520,11 @@ export const IfStatementTests = [
     name: "if statement success test - 2: if else both",
     input: `
     jo baka
-    agar bhai (sahi) {
-    } warna bhai {
+    jo agar (sahi) {
+    } nahi toh {
 
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"BlockStatement","body":[]}]}]}}`,
   },
@@ -532,11 +532,11 @@ export const IfStatementTests = [
     name: "if statement success test - 3: if only with comarison condn",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x >= 9) {
+    baka aa che x = 9;
+    jo agar (x >= 9) {
       x = 5;
     } 
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
@@ -544,11 +544,11 @@ export const IfStatementTests = [
     name: "if statement success test - 4: if only with equality condn",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x == 9) {
+    baka aa che x = 9;
+    jo agar (x == 9) {
       x = 5;
     } 
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"==","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
@@ -556,11 +556,11 @@ export const IfStatementTests = [
     name: "if statement success test - 4: if only with equality condn",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x == 9) {
+    baka aa che x = 9;
+    jo agar (x == 9) {
       x = 5;
     } 
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"==","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
@@ -568,11 +568,11 @@ export const IfStatementTests = [
     name: "if statement success test - 5: if only with inequality condn",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    baka aa che x = 9;
+    jo agar (x != 9) {
       x = 5;
     } 
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
@@ -580,11 +580,11 @@ export const IfStatementTests = [
     name: "if statement success test - 6: else with only expression statement",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    baka aa che x = 9;
+    jo agar (x != 9) {
       x = 5;
-    } warna bhai (x >= 9);
-    bye bhai;
+    } nahi toh (x >= 9);
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}]}}`,
   },
@@ -592,11 +592,11 @@ export const IfStatementTests = [
     name: "if statement success test - 7: with block",
     input: `
     jo baka
-    bhai ye hai x = 9;
-    agar bhai (x != 9)
+    baka aa che x = 9;
+    jo agar (x != 9)
       x = 5;
-    warna bhai (x >= 9);
-    bye bhai;
+    nahi toh (x >= 9);
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}},"alternates":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}]}}`,
   },
@@ -604,10 +604,10 @@ export const IfStatementTests = [
     name: "else-if statement success test - 1: if-else-if one level ladder",
     input: `
     jo baka
-    agar bhai (sahi) {
-    } nahi to bhai (sahi) {
+    jo agar (sahi) {
+    } athva toh (sahi) {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}}]}]}}`
   },
@@ -615,11 +615,11 @@ export const IfStatementTests = [
     name: "else-if statement success test - 2: if-else-if one level ladder with else",
     input: `
     jo baka
-    agar bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } warna bhai {
+    jo agar (sahi) {
+    } athva toh (sahi) {
+    } nahi toh {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"BlockStatement","body":[]}]}]}}`
   },
@@ -627,13 +627,13 @@ export const IfStatementTests = [
     name: "else-if statement success test - 3: if-else-if multiple levels ladder",
     input: `
     jo baka
-    agar bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
+    jo agar (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}}]}]}}`
   },
@@ -641,14 +641,14 @@ export const IfStatementTests = [
     name: "else-if statement success test - 4: if-else-if multiple levels ladder with else",
     input: `
     jo baka
-    agar bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } nahi to bhai (sahi) {
-    } warna bhai {
+    jo agar (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
+    } athva toh (sahi) {
+    } nahi toh {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"BlockStatement","body":[]}]}]}}`
   },
@@ -659,9 +659,9 @@ export const WhileStatementTests = [
     name: "while statement success test: only if",
     input: `
     jo baka
-    jab tak bhai (sahi) {
+    jya sudhi (sahi) {
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BooleanLiteral","value":"sahi"},"body":{"type":"BlockStatement","body":[]}}]}}`,
   },
@@ -669,10 +669,10 @@ export const WhileStatementTests = [
     name: "while statement success test: with some body",
     input: `
     jo baka
-    jab tak bhai (x > 9) {
-      bol bhai "hello";
+    jya sudhi (x > 9) {
+      bol baka "hello";
     }
-    bye bhai;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}]}}]}}`,
   },
@@ -680,9 +680,9 @@ export const WhileStatementTests = [
     name: "while statement success test: with single statement",
     input: `
     jo baka
-    jab tak bhai (x > 9)
-      bol bhai "hello";
-    bye bhai;
+    jya sudhi (x > 9)
+      bol baka "hello";
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}}]}}`,
   },
@@ -690,10 +690,10 @@ export const WhileStatementTests = [
     name: "while statement success test: with single statement as body and statement outside of body",
     input: `
     jo baka
-    jab tak bhai (x > 9)
-      bol bhai "hello";
-    bhai ye hai a = 90;
-    bye bhai;
+    jya sudhi (x > 9)
+      bol baka "hello";
+    baka aa che a = 90;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
@@ -701,11 +701,11 @@ export const WhileStatementTests = [
     name: "while statement success test: with break statement",
     input: `
     jo baka
-    jab tak bhai (x > 9) {
+    jya sudhi (x > 9) {
       bas kar bhai;
     }
-    bhai ye hai a = 90;
-    bye bhai;
+    baka aa che a = 90;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"BreakStatement"},{"type":"EmptyStatement"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
@@ -713,11 +713,11 @@ export const WhileStatementTests = [
     name: "while statement success test: with continue statement",
     input: `
     jo baka
-    jab tak bhai (x > 9) {
+    jya sudhi (x > 9) {
       agla dekh bhai;
     }
-    bhai ye hai a = 90;
-    bye bhai;
+    baka aa che a = 90;
+    aavje baka;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"ContinueStatement"},{"type":"EmptyStatement"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },

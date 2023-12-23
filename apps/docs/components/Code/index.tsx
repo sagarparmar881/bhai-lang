@@ -10,24 +10,24 @@ import Terminal from "./Terminal";
 
 const initialCode = `
 jo baka
- bol bhai "Hello World";
+ bol baka "Kem Party!";
  
-  bhai ye hai a = 3;
-  bhai ye hai b = 0;
+  baka aa che a = 3;
+  baka aa che b = 0;
 
-  jab tak bhai (b < 5) {
-    bol bhai b;
+  jya sudhi (b < 5) {
+    bol baka b;
 
-    agar bhai (b == a) {
-      bol bhai "b is equal to a";
-    } nahi to bhai (b == 0) {
-      bol bhai "b is equal to zero";
+    jo agar (b == a) {
+      bol baka "b is equal to a";
+    } athva toh (b == 0) {
+      bol baka "b is equal to zero";
     }
 
     b += 1;
   }
 
-bye bhai
+aavje baka
 `;
 
 const Code = (props: Props) => {
@@ -79,7 +79,7 @@ const Code = (props: Props) => {
     <div id="playground" className="mx-4 sm:mx-12">
       <div className="sm:flex justify-between items-center">
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-100 sm:text-4xl my-4">
-          Playground
+        Akhatro Karo
         </h2>
         <div className="flex">
           <button
@@ -87,7 +87,7 @@ const Code = (props: Props) => {
             onClick={executeCode}
             className="mx-2 flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-bhagwa-600 hover:bg-bhagwa-700 md:text-lg md:px-10 my-4 sm:my-8 sm:py-3 disabled:opacity-40"
           >
-            Run
+            Chalavo
           </button>
 
           <button

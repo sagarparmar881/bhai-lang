@@ -9,7 +9,7 @@ const features = [
       <>
         <code className="language-cpp">jo baka</code> is the entrypoint for the
         program and all program must end with{" "}
-        <code className="language-cpp">bye bhai</code>. Anything outside of it
+        <code className="language-cpp">aavje baka</code>. Anything outside of it
         will be ignored.
       </>
     ),
@@ -17,7 +17,7 @@ const features = [
 
 jo baka
   // Write code here
-bye bhai
+aavje baka
 
 This too
     `,
@@ -27,17 +27,17 @@ This too
     description: (
       <>
         Variables can be declared using{" "}
-        <code className="language-cpp">bhai ye hai</code>.
+        <code className="language-cpp">baka aa che</code>.
       </>
     ),
     code: `jo baka
-    bhai ye hai a = 10;
-    bhai ye hai b = "two";
-    bhai ye hai c = 15;
+    baka aa che a = 10;
+    baka aa che b = "two";
+    baka aa che c = 15;
     a = a + 1;
     b = 21;
     c *= 2;
-bye bhai
+aavje baka
     `,
   },
   {
@@ -45,83 +45,83 @@ bye bhai
     description: (
       <>
         Numbers and strings are like other languages. Null values can be denoted
-        using <code className="language-cpp">nalla</code>.{" "}
+        using <code className="language-cpp">nakkamo</code>.{" "}
         <code className="language-cpp">sahi</code> and{" "}
         <code className="language-cpp">galat</code> are the boolean values.
       </>
     ),
     code: `jo baka
-    bhai ye hai a = 10;
-    bhai ye hai b = 10 + (15*20);
-    bhai ye hai c = "two";
-    bhai ye hai d = 'ok';
-    bhai ye hai e = nalla;
-    bhai ye hai f = sahi;
-    bhai ye hai g = galat;
-bye bhai
+    baka aa che a = 10;
+    baka aa che b = 10 + (15*20);
+    baka aa che c = "two";
+    baka aa che d = 'ok';
+    baka aa che e = nakkamo;
+    baka aa che f = sahi;
+    baka aa che g = galat;
+aavje baka
     `,
   },
   {
     name: "Built-ins",
     description: (
       <>
-        Use <code className="language-cpp">bol bhai</code> to print anything to
+        Use <code className="language-cpp">bol baka</code> to print anything to
         console.
       </>
     ),
     code: `jo baka
-    bol bhai "Hello World";
-    bhai ye hai a = 10;
+    bol baka "Kem Party!";
+    baka aa che a = 10;
     {
-       bhai ye hai b = 20;
-       bol bhai a + b;
+       baka aa che b = 20;
+       bol baka a + b;
     }
-    bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+    bol baka 5, 'ok', nakkamo , sahi , galat;
+aavje baka
     `,
   },
   {
     name: "Conditionals",
     description: (
       <>
-        Bhailang supports if-else-if ladder construct , <code className="language-cpp">agar bhai</code> block will execute if condition is <code className="language-cpp">sahi</code>, otherwise one of the subsequently added <code className="language-cpp">nahi to bhai</code> blocks will execute if their respective condition is <code className="language-cpp">sahi</code>, and the <code className="language-cpp">warna bhai</code> block will eventually execute if all of the above conditions are <code className="language-cpp">galat</code>.
+        Bhailang supports if-else-if ladder construct , <code className="language-cpp">jo agar</code> block will execute if condition is <code className="language-cpp">sahi</code>, otherwise one of the subsequently added <code className="language-cpp">athva toh</code> blocks will execute if their respective condition is <code className="language-cpp">sahi</code>, and the <code className="language-cpp">nahi toh</code> block will eventually execute if all of the above conditions are <code className="language-cpp">galat</code>.
       </>
     ),
     code: `jo baka
-    bhai ye hai a = 10;
-    agar bhai (a < 20) {
-      bol bhai "a is less than 20";
-    } nahi to bhai ( a < 25 ) {
-      bol bhai "a is less than 25";
-    } warna bhai {
-      bol bhai "a is greater than or equal to 25";
+    baka aa che a = 10;
+    jo agar (a < 20) {
+      bol baka "a is less than 20";
+    } athva toh ( a < 25 ) {
+      bol baka "a is less than 25";
+    } nahi toh {
+      bol baka "a is greater than or equal to 25";
     }
-bye bhai
+aavje baka
     `
   },
   {
     name: "Loops",
     description: (
       <>
-        Statements inside <code className="language-cpp">jab tak bhai</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sahi</code>. If the condition becomes <code className="language-cpp">galat</code>, statement within the loop stops executing and control passes to the statement following the loop. 
+        Statements inside <code className="language-cpp">jya sudhi</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sahi</code>. If the condition becomes <code className="language-cpp">galat</code>, statement within the loop stops executing and control passes to the statement following the loop. 
         Use <code className="language-cpp">bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.
       </>
     ),
     code: `jo baka
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
+    baka aa che a = 0;
+    jya sudhi (a < 10) {
       a += 1;
-      agar bhai (a == 5) {
-        bol bhai "andar se bol bhai ", a;
+      jo agar (a == 5) {
+        bol baka "andar se bol baka ", a;
         agla dekh bhai;
       }
-      agar bhai (a == 6) {
+      jo agar (a == 6) {
         bas kar bhai;
       }
-      bol bhai a;
+      bol baka a;
     }
-    bol bhai "done";
-bye bhai
+    bol baka "done";
+aavje baka
     `
   }
 

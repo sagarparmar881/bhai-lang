@@ -13,7 +13,7 @@ export default function Header() {
                 <BhaiLangLogo />
               </div>
               <p className="mt-3 text-center text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                A toy programming language written in Typescript
+                Ek gujju-gheli programming ni bhasha typescript ma banaveli. 
               </p>
               <div className="prose text-center pt-4 pb-4">
                 {" "}
@@ -25,7 +25,7 @@ export default function Header() {
                     href="#playground"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-bhagwa-600 hover:bg-bhagwa-700 md:py-4 md:text-lg md:px-10"
                   >
-                    Playground
+                    Akhatra Karo
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -35,12 +35,11 @@ export default function Header() {
                     href="https://github.com/DulLabs/bhai-lang"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-bhagwa-700 bg-bhagwa-300 hover:bg-bhagwa-400 md:py-4 md:text-lg md:px-10"
                   >
-                    View Source
+                    Code Dekho
                   </a>
                 </div>
               </div>
               <div className="text-center text-gray-300 pt-6">
-                Made by
                 <a
                   href="https://github.com/aniketsingh0104"
                   target="_blank"
@@ -48,14 +47,15 @@ export default function Header() {
                 >
                   <span className="text-bhagwa-700"> @aniketsingh0104 </span>
                 </a>
-                and
+                ane
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ristri"
                 >
-                  <span className="text-bhagwa-700"> @ristri</span>
+                  <span className="text-bhagwa-700"> @ristri </span>
                 </a>
+                Taraf Thi
               </div>
             </div>
           </main>

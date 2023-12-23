@@ -78,7 +78,7 @@ export default class BinaryExpression implements Visitor {
     }
 
     const runtimeException = new RuntimeException(
-      `Kya kar rha hai tu??..Boolean operand ni jamta "${node.operator}" ke sath`
+      `Oye Babuchak, aa su kare che??..Boolean operand ni jamta "${node.operator}" ke sath`
     );
 
     if (
