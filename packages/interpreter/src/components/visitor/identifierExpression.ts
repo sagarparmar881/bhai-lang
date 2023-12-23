@@ -13,8 +13,8 @@ export default class IdentifierExpression implements Visitor {
     let value = InterpreterModule.getCurrentScope().get(node.name);
 
     if (value === null) value = "nakkamo";
-    else if (value === true) value = "sahi";
-    else if (value === false) value = "galat";
+    else if (value === true) value = "sachu";
+    else if (value === false) value = "khotu";
 
     return value;
   }

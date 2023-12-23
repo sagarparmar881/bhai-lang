@@ -236,60 +236,60 @@ export const NegativeTestCases = [
     `,
     exception: NallaPointerException,
   },
-  // sahi - galat case
+  // sachu - khotu case
   {
-    name: "interpreter use sahi variable in expression, should throw an exception",
+    name: "interpreter use sachu variable in expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = sahi;
+      baka aa che a = sachu;
       bol baka a + 9;
       aavje baka;
     `,
     exception: RuntimeException,
   },
   {
-    name: "interpreter use galat variable in expression, should throw an exception",
+    name: "interpreter use khotu variable in expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = galat;
+      baka aa che a = khotu;
       bol baka a + 9;
       aavje baka;
     `,
     exception: RuntimeException,
   },
   {
-    name: "interpreter use sahi in variable initialisation expression, should throw an exception",
+    name: "interpreter use sachu in variable initialisation expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = sahi + 80;
+      baka aa che a = sachu + 80;
       aavje baka;
     `,
     exception: RuntimeException,
   },
   {
-    name: "interpreter use galat in variable initialisation expression, should throw an exception",
+    name: "interpreter use khotu in variable initialisation expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = galat + 80;
+      baka aa che a = khotu + 80;
       aavje baka;
     `,
     exception: RuntimeException,
   },
   {
-    name: "interpreter use sahi variable in another variable initialisation expression, should throw an exception",
+    name: "interpreter use sachu variable in another variable initialisation expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = sahi;
+      baka aa che a = sachu;
       baka aa che b = a + "hello";
       aavje baka;
     `,
     exception: RuntimeException,
   },
   {
-    name: "interpreter use galat variable in complex expression, should throw an exception",
+    name: "interpreter use khotu variable in complex expression, should throw an exception",
     input: `
       jo baka;
-      baka aa che a = galat;
+      baka aa che a = khotu;
       baka aa che b = ((a*9) * a + "hello");
       aavje baka;
     `,
@@ -310,7 +310,7 @@ export const NegativeTestCases = [
     name: "complex expression test with one nakkamo operand and one boolean operand, should throw an exception",
     input: `
         jo baka
-        (nakkamo * (sahi + 8 + 10));
+        (nakkamo * (sachu + 8 + 10));
         aavje baka
       `,
     output: RuntimeException,
@@ -319,7 +319,7 @@ export const NegativeTestCases = [
     name: "complex expression test with one nakkamo operand and one boolean operand - 2, should throw nakkamo pointer exception",
     input: `
         jo baka
-        (sahi * (nakkamo + 8 + 10));
+        (sachu * (nakkamo + 8 + 10));
         aavje baka
       `,
     output: NallaPointerException,
@@ -328,7 +328,7 @@ export const NegativeTestCases = [
     name: "complex expression test with one nakkamo operand and one boolean operand - 3, should throw nakkamo pointer exception",
     input: `
         jo baka
-        (nakkamo + sahi);
+        (nakkamo + sachu);
         aavje baka
       `,
     output: NallaPointerException,
@@ -337,7 +337,7 @@ export const NegativeTestCases = [
     name: "complex expression test with one boolean operand, should throw an exception",
     input: `
         jo baka
-        (sahi * (4 + 8 + 10));
+        (sachu * (4 + 8 + 10));
         aavje baka
       `,
     output: RuntimeException,
@@ -346,7 +346,7 @@ export const NegativeTestCases = [
     name: "additive expression test with only boolean operand, should throw an exception",
     input: `
         jo baka
-        sahi + galat;
+        sachu + khotu;
         aavje baka
       `,
     output: RuntimeException,
@@ -355,7 +355,7 @@ export const NegativeTestCases = [
     name: "additive expression test with only variable boolean operand, should throw an exception",
     input: `
         jo baka
-        baka aa che a = sahi, b = galat;
+        baka aa che a = sachu, b = khotu;
         a + b;
         aavje baka
       `,
@@ -365,7 +365,7 @@ export const NegativeTestCases = [
     name: "multiplicative expression test with only boolean operand, should throw an exception",
     input: `
         jo baka
-        sahi * galat;
+        sachu * khotu;
         aavje baka
       `,
     output: RuntimeException,
@@ -374,7 +374,7 @@ export const NegativeTestCases = [
     name: "multiplicative expression test with only variable boolean operand, should throw an exception",
     input: `
         jo baka
-        baka aa che a = sahi, b = galat;
+        baka aa che a = sachu, b = khotu;
         a * b;
         aavje baka
       `,
@@ -384,7 +384,7 @@ export const NegativeTestCases = [
     name: "division expression test with only boolean operand, should throw an exception",
     input: `
         jo baka
-        sahi / galat;
+        sachu / khotu;
         aavje baka
       `,
     output: RuntimeException,
@@ -393,7 +393,7 @@ export const NegativeTestCases = [
     name: "division expression test with only variable boolean operand, should throw an exception",
     input: `
         jo baka
-        baka aa che a = sahi, b = galat;
+        baka aa che a = sachu, b = khotu;
         a / b;
         aavje baka
       `,
@@ -419,10 +419,10 @@ export const NegativeTestCases = [
     output: NallaPointerException,
   },
   {
-    name: "complex assign test with expression containing sahi, should throw an exception",
+    name: "complex assign test with expression containing sachu, should throw an exception",
     input: `
         jo baka
-        baka aa che a = sahi;
+        baka aa che a = sachu;
         a *= 5;
         aavje baka;
       `,
@@ -443,7 +443,7 @@ export const NegativeTestCases = [
     name: "infinite while loop, should throw an exception",
     input: `
         jo baka
-        jya sudhi (sahi) {
+        jya sudhi (sachu) {
 
         }
         aavje baka;
@@ -467,7 +467,7 @@ export const NegativeTestCases = [
     input: `
         jo baka
         baka aa che a = 0;
-        jo agar (sahi)
+        jo agar (sachu)
           bas kar bhai;
         aavje baka;
       `,
@@ -498,7 +498,7 @@ export const NegativeTestCases = [
     name: `modulus operator test with invalid operand, should throw an exception`,
     input: `
       jo baka;
-      bol baka "sahi" % 9;
+      bol baka "sachu" % 9;
       aavje baka;
     `,
     output: RuntimeException,
@@ -522,7 +522,7 @@ export const NegativeTestCases = [
     input: `
         jo baka
         baka aa che a = 0;
-        jo agar (sahi)
+        jo agar (sachu)
           agla dekh bhai
         aavje baka;
       `,

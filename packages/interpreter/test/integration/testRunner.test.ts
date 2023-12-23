@@ -215,7 +215,7 @@ test("whileStatement test with infinite loop, should throw runtime exception aft
     interpreter.interpret(`
     jo baka
     
-    jya sudhi (sahi) {
+    jya sudhi (sachu) {
       bol baka "bhai";
     }
     aavje baka;

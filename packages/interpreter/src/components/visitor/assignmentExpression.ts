@@ -30,12 +30,12 @@ export default class AssignmentExpression implements Visitor {
 
       if (left === null && node.operator !== "=")
         throw new NallaPointerException(
-          `Nalla operand ni jamta "${node.operator}" ke sath`
+          `Nakkamo operand naa jaame "${node.operator}" ni sathe`
         );
 
       if ((left === true || left === false) && node.operator !== "=")
         throw new RuntimeException(
-          `Boolean operand ni jamta "${node.operator}" ke sath`
+          `Boolean operand naa jaame "${node.operator}" ni sathe`
         );
 
       const newValue = getOperationValue(

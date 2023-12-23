@@ -46,8 +46,8 @@ aavje baka
       <>
         Numbers and strings are like other languages. Null values can be denoted
         using <code className="language-cpp">nakkamo</code>.{" "}
-        <code className="language-cpp">sahi</code> and{" "}
-        <code className="language-cpp">galat</code> are the boolean values.
+        <code className="language-cpp">sachu</code> and{" "}
+        <code className="language-cpp">khotu</code> are the boolean values.
       </>
     ),
     code: `jo baka
@@ -56,8 +56,8 @@ aavje baka
     baka aa che c = "two";
     baka aa che d = 'ok';
     baka aa che e = nakkamo;
-    baka aa che f = sahi;
-    baka aa che g = galat;
+    baka aa che f = sachu;
+    baka aa che g = khotu;
 aavje baka
     `,
   },
@@ -76,7 +76,7 @@ aavje baka
        baka aa che b = 20;
        bol baka a + b;
     }
-    bol baka 5, 'ok', nakkamo , sahi , galat;
+    bol baka 5, 'ok', nakkamo , sachu , khotu;
 aavje baka
     `,
   },
@@ -84,7 +84,7 @@ aavje baka
     name: "Conditionals",
     description: (
       <>
-        Bhailang supports if-else-if ladder construct , <code className="language-cpp">jo agar</code> block will execute if condition is <code className="language-cpp">sahi</code>, otherwise one of the subsequently added <code className="language-cpp">athva toh</code> blocks will execute if their respective condition is <code className="language-cpp">sahi</code>, and the <code className="language-cpp">nahi toh</code> block will eventually execute if all of the above conditions are <code className="language-cpp">galat</code>.
+        Bhailang supports if-else-if ladder construct , <code className="language-cpp">jo agar</code> block will execute if condition is <code className="language-cpp">sachu</code>, otherwise one of the subsequently added <code className="language-cpp">athva toh</code> blocks will execute if their respective condition is <code className="language-cpp">sachu</code>, and the <code className="language-cpp">nahi toh</code> block will eventually execute if all of the above conditions are <code className="language-cpp">khotu</code>.
       </>
     ),
     code: `jo baka
@@ -103,7 +103,7 @@ aavje baka
     name: "Loops",
     description: (
       <>
-        Statements inside <code className="language-cpp">jya sudhi</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sahi</code>. If the condition becomes <code className="language-cpp">galat</code>, statement within the loop stops executing and control passes to the statement following the loop. 
+        Statements inside <code className="language-cpp">jya sudhi</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sachu</code>. If the condition becomes <code className="language-cpp">khotu</code>, statement within the loop stops executing and control passes to the statement following the loop. 
         Use <code className="language-cpp">bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.
       </>
     ),
@@ -136,8 +136,7 @@ export default function Documentation() {
             Documentation
           </h2>
           <p className="mt-4 text-gray-300">
-            Bhailang is dynamically typed toy programming language, based on an
-            inside joke, written in Typescript.
+            Gujjulang ek gujju-gheli programming ni bhasha che typescript ma banaveli.
           </p>
 
           <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">

@@ -25,7 +25,7 @@ export default function Header() {
                     href="#playground"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-bhagwa-600 hover:bg-bhagwa-700 md:py-4 md:text-lg md:px-10"
                   >
-                    Akhatra Karo
+                    Akhatro Karo
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">

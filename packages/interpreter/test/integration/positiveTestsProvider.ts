@@ -92,7 +92,7 @@ export const NoOutputPositiveTests = [
     name: "simple assignment expression test with only one identifer, should success",
     input: `
       jo baka
-      baka aa che a = sahi;
+      baka aa che a = sachu;
       a = 4;
       aavje baka
     `,
@@ -311,175 +311,175 @@ export const WithOutputPositiveTests = [
   },
   // Boolean test
   {
-    name: `binaryExpression print test with boolean expression - sahi, should success`,
+    name: `binaryExpression print test with boolean expression - sachu, should success`,
     input: `
       jo baka;
-      baka aa che a = sahi;
-      jo agar (sahi == a) {
-        bol baka "hai sahi";
+      baka aa che a = sachu;
+      jo agar (sachu == a) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "hai sahi",
+    output: "hai sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat, should success`,
+    name: `binaryExpression print test with boolean expression - khotu, should success`,
     input: `
       jo baka;
-      baka aa che a = galat;
-      jo agar (galat == a) {
-        bol baka "hai galat";
+      baka aa che a = khotu;
+      jo agar (khotu == a) {
+        bol baka "hai khotu";
       } nahi toh {
-        bol baka "nahi galat";
+        bol baka "nahi khotu";
       }
       aavje baka
     `,
-    output: "hai galat",
+    output: "hai khotu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi with string sahi, should success`,
+    name: `binaryExpression print test with boolean expression - sachu with string sachu, should success`,
     input: `
       jo baka;
-      baka aa che a = "sahi";
-      jo agar (sahi == a) {
-        bol baka "hai sahi";
+      baka aa che a = "sachu";
+      jo agar (sachu == a) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "nahi sahi",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression, should success`,
     input: `
       jo baka;
       baka aa che a = 7;
-      jo agar (sahi == (a > 5)) {
-        bol baka "hai sahi";
+      jo agar (sachu == (a > 5)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "hai sahi",
+    output: "hai sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression & string "sahi", should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression & string "sachu", should success`,
     input: `
       jo baka;
       baka aa che a = 7;
-      jo agar ("sahi" == (a > 5)) {
-        bol baka "hai sahi";
+      jo agar ("sachu" == (a > 5)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "nahi sahi",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression & two expressions, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression & two expressions, should success`,
     input: `
       jo baka;
-      baka aa che a = sahi;
-      jo agar ("sahi" == (a == sahi)) {
-        bol baka "hai sahi";
+      baka aa che a = sachu;
+      jo agar ("sachu" == (a == sachu)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "nahi sahi",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression -3, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression -3, should success`,
     input: `
       jo baka;
-      baka aa che a = sahi;
-      jo agar ((a == sahi) == (a == sahi)) {
-        bol baka "hai sahi";
+      baka aa che a = sachu;
+      jo agar ((a == sachu) == (a == sachu)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "hai sahi",
+    output: "hai sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression - 4, should success`,
-    input: `
-      jo baka;
-      baka aa che a;
-      jo agar ((a == nakkamo) == (a == sahi)) {
-        bol baka "hai sahi";
-      } nahi toh {
-        bol baka "nahi sahi";
-      }
-      aavje baka
-    `,
-    output: "nahi sahi",
-  },
-  {
-    name: `binaryExpression print test with boolean expression - sahi expression - 5, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression - 4, should success`,
     input: `
       jo baka;
       baka aa che a;
-      jo agar ((a == nakkamo) == (a == sahi)) {
-        bol baka "hai sahi";
+      jo agar ((a == nakkamo) == (a == sachu)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "nahi sahi",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression - 5, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression - 5, should success`,
     input: `
       jo baka;
       baka aa che a;
-      baka aa che b = galat;
-      jo agar (a == b) {
-        bol baka "hai sahi";
+      jo agar ((a == nakkamo) == (a == sachu)) {
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi sahi";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "nahi sahi",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat variables comparison, should success`,
+    name: `binaryExpression print test with boolean expression - sachu expression - 5, should success`,
     input: `
       jo baka;
-      baka aa che a = galat;
-      baka aa che b = galat;
+      baka aa che a;
+      baka aa che b = khotu;
       jo agar (a == b) {
-        bol baka "hai galat";
+        bol baka "hai sachu";
       } nahi toh {
-        bol baka "nahi galat";
+        bol baka "nahi sachu";
       }
       aavje baka
     `,
-    output: "hai galat",
+    output: "nahi sachu",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat variables comparison with string galat, should success`,
+    name: `binaryExpression print test with boolean expression - khotu variables comparison, should success`,
     input: `
       jo baka;
-      baka aa che a = "galat";
-      baka aa che b = galat;
+      baka aa che a = khotu;
+      baka aa che b = khotu;
       jo agar (a == b) {
-        bol baka "hai galat";
+        bol baka "hai khotu";
       } nahi toh {
-        bol baka "nahi galat";
+        bol baka "nahi khotu";
       }
       aavje baka
     `,
-    output: "nahi galat",
+    output: "hai khotu",
+  },
+  {
+    name: `binaryExpression print test with boolean expression - khotu variables comparison with string khotu, should success`,
+    input: `
+      jo baka;
+      baka aa che a = "khotu";
+      baka aa che b = khotu;
+      jo agar (a == b) {
+        bol baka "hai khotu";
+      } nahi toh {
+        bol baka "nahi khotu";
+      }
+      aavje baka
+    `,
+    output: "nahi khotu",
   },
   {
     name: "float value addition with integer value test, should success",
@@ -527,10 +527,10 @@ export const WithOutputPositiveTests = [
     name: "printStatement test with multiple expressions & without any variables, should success",
     input: `
       jo baka;
-      bol baka "hello", sahi, galat;
+      bol baka "hello", sachu, khotu;
       aavje baka
     `,
-    output: "hello sahi galat",
+    output: "hello sachu khotu",
   },
   {
     name: "printStatement test with nakkamo, should success",
@@ -599,24 +599,24 @@ export const WithOutputPositiveTests = [
     output: "nakkamo",
   },
   {
-    name: `printStatement test with sahi variable, should success`,
+    name: `printStatement test with sachu variable, should success`,
     input: `
       jo baka;
-      baka aa che a = sahi;
+      baka aa che a = sachu;
       bol baka a;
       aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
-    name: `printStatement test with galat variable, should success`,
+    name: `printStatement test with khotu variable, should success`,
     input: `
       jo baka;
-      baka aa che a = galat;
+      baka aa che a = khotu;
       bol baka a;
       aavje baka;
     `,
-    output: "galat",
+    output: "khotu",
   },
   {
     name: `printStatement test with assignment expression, should success`,
@@ -650,30 +650,30 @@ export const WithOutputPositiveTests = [
     name: `printStatement test with logical - 1, should success`,
     input: `
       jo baka;
-      bol baka galat && sahi;
+      bol baka khotu && sachu;
       aavje baka;
     `,
-    output: "galat",
+    output: "khotu",
   },
   {
     name: `printStatement test with logical - 2, should success`,
     input: `
     jo baka;
-    baka aa che a = sahi;
-    bol baka a && galat;
+    baka aa che a = sachu;
+    bol baka a && khotu;
     aavje baka;
     `,
-    output: "galat",
+    output: "khotu",
   },
   {
     name: `printStatement test with logical - 3, should success`,
     input: `
     jo baka;
-    baka aa che a = sahi;
-    bol baka a && sahi;
+    baka aa che a = sachu;
+    bol baka a && sachu;
     aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
     name: `printStatement test with equality, should success`,
@@ -682,7 +682,7 @@ export const WithOutputPositiveTests = [
       bol baka 9 == 10;
       aavje baka;
     `,
-    output: "galat",
+    output: "khotu",
   },
   {
     name: `printStatement test with inequality, should success`,
@@ -691,7 +691,7 @@ export const WithOutputPositiveTests = [
       bol baka 9 != 10;
       aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
     name: `printStatement test with logical OR, should success`,
@@ -706,28 +706,28 @@ export const WithOutputPositiveTests = [
     name: `printStatement test with logical OR - 2, should success`,
     input: `
       jo baka;
-      bol baka galat || sahi;
+      bol baka khotu || sachu;
       aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
-    name: `printStatement test with boolean sahi galat and logical, should success`,
+    name: `printStatement test with boolean sachu khotu and logical, should success`,
     input: `
       jo baka;
-      bol baka sahi != 10;
+      bol baka sachu != 10;
       aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
-    name: `printStatement test with boolean sahi and string "sahi", should success`,
+    name: `printStatement test with boolean sachu and string "sachu", should success`,
     input: `
       jo baka;
-      bol baka "sahi" == sahi;
+      bol baka "sachu" == sachu;
       aavje baka;
     `,
-    output: "galat",
+    output: "khotu",
   },
   // while statement / loop tests
   {
@@ -747,7 +747,7 @@ export const WithOutputPositiveTests = [
     name: `whileStatement test with single break statement, should success`,
     input: `
       jo baka;
-      jya sudhi (sahi) 
+      jya sudhi (sachu) 
         bas kar bhai;
       bol baka "end";
       aavje baka;
@@ -760,10 +760,10 @@ export const WithOutputPositiveTests = [
       jo baka;
       baka aa che a = 0;
       jya sudhi (a < 2) {
-        jya sudhi (sahi)
+        jya sudhi (sachu)
           bas kar bhai;
         bol baka "hello";
-        jo agar (sahi)
+        jo agar (sachu)
           bas kar bhai;
       }
       aavje baka;
@@ -777,7 +777,7 @@ export const WithOutputPositiveTests = [
       baka aa che a = 0;
       jya sudhi (a < 2) {
         bol baka "hello";
-        jo agar (sahi)
+        jo agar (sachu)
           bas kar bhai;
         bas kar bhai;
         bas kar bhai;
@@ -791,7 +791,7 @@ export const WithOutputPositiveTests = [
     name: `if statement success test - 1: only if, should success`,
     input: `
     jo baka
-    jo agar (sahi) {
+    jo agar (sachu) {
       bol baka "bhai";
     }
     aavje baka;
@@ -802,14 +802,14 @@ export const WithOutputPositiveTests = [
     name: `if statement success test - 2: if else both, should success`,
     input: `
     jo baka
-    jo agar (sahi) {
-      bol baka "sahi";
+    jo agar (sachu) {
+      bol baka "sachu";
     } nahi toh {
-      bol baka "galat";
+      bol baka "khotu";
     }
     aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
     name: `if statement success test - 3: if only with comarison condn, should success`,
@@ -829,14 +829,14 @@ export const WithOutputPositiveTests = [
     name: `else-if statement success test - 1: if with one else-if, should success`,
     input: `
     jo baka
-    jo agar (galat) {
-      bol baka "galat";
-    } athva toh (sahi) {
-      bol baka "sahi";
+    jo agar (khotu) {
+      bol baka "khotu";
+    } athva toh (sachu) {
+      bol baka "sachu";
     }
     aavje baka;
     `,
-    output: "sahi",
+    output: "sachu",
   },
   {
     name: `else-if statement success test - 2: if with multiple else-ifs, should success`,
@@ -894,17 +894,17 @@ export const WithOutputPositiveTests = [
   },
   // logical expression test
   {
-    name: `logical "&&" test with sahi galat, should success`,
+    name: `logical "&&" test with sachu khotu, should success`,
     input: `
         jo baka
-        jo agar (sahi && galat) {
-          bol baka "sahi";
+        jo agar (sachu && khotu) {
+          bol baka "sachu";
         } nahi toh {
-          bol baka "galat";
+          bol baka "khotu";
         }
         aavje baka;
       `,
-    output: `galat`,
+    output: `khotu`,
   },
   // modulus operator test
   {

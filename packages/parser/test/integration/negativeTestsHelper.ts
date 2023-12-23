@@ -94,7 +94,7 @@ export const NegativeStatementTests = [
     name: "print statement with space separated values, should throw an exception",
     input: `
         jo baka
-        bol baka sahi galat;
+        bol baka sachu khotu;
         aavje baka
       `,
     output: SyntaxError,
@@ -335,7 +335,7 @@ export const IfStatementNagativeTests = [
     name: "If statement test - nothing after if condition , should throw an exception",
     input: `
         jo baka
-        jo agar (sahi)
+        jo agar (sachu)
       `,
     output: SyntaxError,
   },
@@ -365,7 +365,7 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - else-if ladder without if condition first , should throw an exception",
     input: `
         jo baka
-        athva toh (sahi) {
+        athva toh (sachu) {
         }
         aavje baka;
       `,
@@ -375,8 +375,8 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - else-if ladder with multiple levels without if condition first , should throw an exception",
     input: `
         jo baka
-        athva toh (sahi) {
-        } athva toh (sahi) {
+        athva toh (sachu) {
+        } athva toh (sachu) {
         }
         aavje baka;
       `,
@@ -386,9 +386,9 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - nothing after else-if ladder , should throw an exception",
     input: `
         jo baka
-        jo agar (sahi) {
+        jo agar (sachu) {
 
-        } athva toh (sahi)
+        } athva toh (sachu)
         aavje baka;
       `,
     output: SyntaxError,
@@ -397,11 +397,11 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - nothing after else-if ladder with multiple levels , should throw an exception",
     input: `
         jo baka
-        jo agar (sahi) {
+        jo agar (sachu) {
 
-        } athva toh (sahi) {
+        } athva toh (sachu) {
 
-        } athva toh (sahi)
+        } athva toh (sachu)
         aavje baka;
       `,
     output: SyntaxError,
@@ -410,7 +410,7 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - else-if without a condition , should throw an exception",
     input: `
         jo baka
-        jo agar (sahi) {
+        jo agar (sachu) {
 
         } athva toh
         aavje baka;
@@ -421,9 +421,9 @@ export const IfStatementNagativeTests = [
     name: "Else-if statement test - else-if without a condition, multple levels , should throw an exception",
     input: `
         jo baka
-        jo agar (sahi) {
+        jo agar (sachu) {
 
-        } athva toh (sahi) {
+        } athva toh (sachu) {
 
         } athva toh
         aavje baka;

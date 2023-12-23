@@ -29,11 +29,11 @@ export default class BinaryExpression implements Visitor {
     } else if (node.type == NodeType.LogicalExpression) {
       this._checkNalla(node);
 
-      left = node.left.type == NodeType.BooleanLiteral ? (node.left.value == "sahi" ? true : false) : InterpreterModule.getVisitor(node.left.type).visitNode(
+      left = node.left.type == NodeType.BooleanLiteral ? (node.left.value == "sachu" ? true : false) : InterpreterModule.getVisitor(node.left.type).visitNode(
         node.left
       );
 
-      right = node.right.type == NodeType.BooleanLiteral ? (node.right.value == "sahi" ? true : false) : InterpreterModule.getVisitor(node.right.type).visitNode(
+      right = node.right.type == NodeType.BooleanLiteral ? (node.right.value == "sachu" ? true : false) : InterpreterModule.getVisitor(node.right.type).visitNode(
         node.right
       );
 
@@ -49,7 +49,7 @@ export default class BinaryExpression implements Visitor {
     }
 
     const nallaException = new NallaPointerException(
-      `Nalla operand ni jamta "${node.operator}" ke sath`
+      `Nakkamo operand naa jaame "${node.operator}" ni sathe`
     );
 
     if (
@@ -78,7 +78,7 @@ export default class BinaryExpression implements Visitor {
     }
 
     const runtimeException = new RuntimeException(
-      `Oye Babuchak, aa su kare che??..Boolean operand ni jamta "${node.operator}" ke sath`
+      `Oye Babuchak, aa su kare che??..Boolean operand naa jaame "${node.operator}" ni sathe`
     );
 
     if (
@@ -104,7 +104,7 @@ export default class BinaryExpression implements Visitor {
       return null;
 
     if (node.type === NodeType.BooleanLiteral) {
-      return node.value === "sahi" ? true : false;
+      return node.value === "sachu" ? true : false;
     }
 
     if (node.type === NodeType.IdentifierExpression && node.name)

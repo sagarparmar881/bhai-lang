@@ -78,7 +78,7 @@ aavje baka
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nakkamo</code>. <code>sahi</code> and <code>galat</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nakkamo</code>. <code>sachu</code> and <code>khotu</code> are the boolean values.</p>
 
 ```
 
@@ -88,8 +88,8 @@ jo baka
   baka aa che c = "two";
   baka aa che d = 'ok';
   baka aa che e = nakkamo;
-  baka aa che f = sahi;
-  baka aa che g = galat;
+  baka aa che f = sachu;
+  baka aa che g = khotu;
 aavje baka
 ```
 
@@ -105,12 +105,12 @@ jo baka
     baka aa che b = 20;
     bol baka a + b;
   }
-  bol baka 5, 'ok', nakkamo , sahi , galat;
+  bol baka 5, 'ok', nakkamo , sachu , khotu;
 aavje baka
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports if-else-if ladder construct , <code>jo agar</code> block will execute if condition is <code>sahi</code>, otherwise one of the subsequently added <code>athva toh</code> blocks will execute if their respective condition is <code>sahi</code>, and the <code>nahi toh</code> block will eventually execute if all of the above conditions are <code>galat</code>
+<p align="center">Bhailang supports if-else-if ladder construct , <code>jo agar</code> block will execute if condition is <code>sachu</code>, otherwise one of the subsequently added <code>athva toh</code> blocks will execute if their respective condition is <code>sachu</code>, and the <code>nahi toh</code> block will eventually execute if all of the above conditions are <code>khotu</code>
 
 ```
 
@@ -127,7 +127,7 @@ aavje baka
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jya sudhi</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jya sudhi</code> blocks are executed as long as a specified condition evaluates to sachu. If the condition becomes <code>khotu</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
 
 
 ```
