@@ -55,7 +55,18 @@ export default function Header() {
                 >
                   <span className="text-bhagwa-700"> @ristri </span>
                 </a>
-                Taraf Thi
+                taraf thi
+              </div>
+              <div className="text-center text-gray-300 pt-6">
+                gujju version
+                <a
+                  href="https://github.com/sagarparmar881"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-bhagwa-700"> @sagarparmar881 </span>
+                </a>  
+                taraf thi           
               </div>
             </div>
           </main>
