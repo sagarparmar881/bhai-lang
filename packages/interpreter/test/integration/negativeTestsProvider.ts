@@ -468,7 +468,7 @@ export const NegativeTestCases = [
         jo baka
         baka aa che a = 0;
         jo agar (sachu)
-          bas kar bhai;
+          roki de;
         aavje baka;
       `,
     output: RuntimeException,
@@ -510,7 +510,7 @@ export const NegativeTestCases = [
         jo baka
         baka aa che a = 0;
         jya sudhi (a < 2) {
-          agla dekh bhai;
+          chalva de;
           a = 5;
         }
         aavje baka;
@@ -523,7 +523,7 @@ export const NegativeTestCases = [
         jo baka
         baka aa che a = 0;
         jo agar (sachu)
-          agla dekh bhai
+          chalva de
         aavje baka;
       `,
     output: RuntimeException,

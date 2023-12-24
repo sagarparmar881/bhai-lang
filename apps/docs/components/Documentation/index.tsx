@@ -7,26 +7,25 @@ const features = [
     name: "General",
     description: (
       <>
-        <code className="language-cpp">jo baka</code> is the entrypoint for the
-        program and all program must end with{" "}
-        <code className="language-cpp">aavje baka</code>. Anything outside of it
-        will be ignored.
+        <code className="language-cpp">jo baka</code> program no entrypoint che
+        ane darek program {" "}
+        <code className="language-cpp">aavje baka</code> thi pura thase. Aani baar no code tel leva jaay.
       </>
     ),
-    code: `This will be ignored
+    code: `Aa code tel leva jaay
 
 jo baka
-  // Write code here
+  // Aahiya code lakhvanu
 aavje baka
 
-This too
+Ane aa code pan tel leva jaay
     `,
   },
   {
     name: "Variables",
     description: (
       <>
-        Variables can be declared using{" "}
+        Variables banava maate{" "}
         <code className="language-cpp">baka aa che</code>.
       </>
     ),
@@ -44,10 +43,10 @@ aavje baka
     name: "Types",
     description: (
       <>
-        Numbers and strings are like other languages. Null values can be denoted
-        using <code className="language-cpp">nakkamo</code>.{" "}
-        <code className="language-cpp">sachu</code> and{" "}
-        <code className="language-cpp">khotu</code> are the boolean values.
+        Numbers ane strings bija programming language jevu same che. 
+        Null values atle <code className="language-cpp">nakkamo</code>.{" "}
+        <code className="language-cpp">sachu</code> ane{" "}
+        <code className="language-cpp">khotu</code> atle ke boolean values.
       </>
     ),
     code: `jo baka
@@ -65,8 +64,7 @@ aavje baka
     name: "Built-ins",
     description: (
       <>
-        Use <code className="language-cpp">bol baka</code> to print anything to
-        console.
+        Console ma kasu pan lakhva maate <code className="language-cpp">bol baka</code> use karwanu.
       </>
     ),
     code: `jo baka
@@ -84,7 +82,7 @@ aavje baka
     name: "Conditionals",
     description: (
       <>
-        Bhailang supports if-else-if ladder construct , <code className="language-cpp">jo agar</code> block will execute if condition is <code className="language-cpp">sachu</code>, otherwise one of the subsequently added <code className="language-cpp">athva toh</code> blocks will execute if their respective condition is <code className="language-cpp">sachu</code>, and the <code className="language-cpp">nahi toh</code> block will eventually execute if all of the above conditions are <code className="language-cpp">khotu</code>.
+        Gujjulang supports if-else-if ladder construct, <code className="language-cpp">jo agar</code> block atle ki if condition barobar <code className="language-cpp">sachu</code>, ane <code className="language-cpp">athva toh</code> block atle ki else if condition barobar <code className="language-cpp">sachu</code>, ane <code className="language-cpp">nahi toh</code> block atle ki else condition barobar <code className="language-cpp">khotu</code>.
       </>
     ),
     code: `jo baka
@@ -103,8 +101,8 @@ aavje baka
     name: "Loops",
     description: (
       <>
-        Statements inside <code className="language-cpp">jya sudhi</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sachu</code>. If the condition becomes <code className="language-cpp">khotu</code>, statement within the loop stops executing and control passes to the statement following the loop. 
-        Use <code className="language-cpp">bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.
+        Loop chalava maate <code className="language-cpp">jya sudhi</code> block chalse jya sudhi condition barobar <code className="language-cpp">sachu</code>. Ane jo condition barobar <code className="language-cpp">khotu</code>, loop bandh thay jase ane aagad no code chalavse. 
+        Loop ne break or rokva maate <code className="language-cpp">roki de</code> ane continue or chalva maate <code className="language-cpp">chalva de</code> use karvanu.
       </>
     ),
     code: `jo baka
@@ -112,11 +110,11 @@ aavje baka
     jya sudhi (a < 10) {
       a += 1;
       jo agar (a == 5) {
-        bol baka "andar se bol baka ", a;
-        agla dekh bhai;
+        bol baka "andar thi bol baka ", a;
+        chalva de;
       }
       jo agar (a == 6) {
-        bas kar bhai;
+        roki de;
       }
       bol baka a;
     }

@@ -702,7 +702,7 @@ export const WhileStatementTests = [
     input: `
     jo baka
     jya sudhi (x > 9) {
-      bas kar bhai;
+      roki de;
     }
     baka aa che a = 90;
     aavje baka;
@@ -714,7 +714,7 @@ export const WhileStatementTests = [
     input: `
     jo baka
     jya sudhi (x > 9) {
-      agla dekh bhai;
+      chalva de;
     }
     baka aa che a = 90;
     aavje baka;

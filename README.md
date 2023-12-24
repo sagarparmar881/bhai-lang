@@ -127,7 +127,7 @@ aavje baka
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jya sudhi</code> blocks are executed as long as a specified condition evaluates to sachu. If the condition becomes <code>khotu</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jya sudhi</code> blocks are executed as long as a specified condition evaluates to sachu. If the condition becomes <code>khotu</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>roki de</code> to break the loop and <code className="language-cpp">chalva de</code> to continue within loop.</p>
 
 
 ```
@@ -137,11 +137,11 @@ jo baka
   jya sudhi (a < 10) {
    a += 1;
    jo agar (a == 5) {
-    bol baka "andar se bol baka ", a;
-    agla dekh bhai;
+    bol baka "andar thi bol baka ", a;
+    chalva de;
    }
    jo agar (a == 6) {
-    bas kar bhai;
+    roki de;
    }
    bol baka a;
   }

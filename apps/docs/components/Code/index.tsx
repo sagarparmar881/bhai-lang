@@ -10,24 +10,21 @@ import Terminal from "./Terminal";
 
 const initialCode = `
 jo baka
- bol baka "Kem Party!";
- 
-  baka aa che a = 3;
-  baka aa che b = 0;
-
-  jya sudhi (b < 5) {
-    bol baka b;
-
-    jo agar (b == a) {
-      bol baka "b is equal to a";
-    } athva toh (b == 0) {
-      bol baka "b is equal to zero";
+    baka aa che day = 0;
+    jya sudhi (day >= 0) {
+    jo agar (day == 0) {
+        bol baka "pass nu jugaad kar aapo koi!";
+      }     
+    athva toh (day == 10) {
+        bol baka "chalo fafda-jalebi khaava!";
+        roki de;
+      }
+      nahi toh {
+       bol baka "eeey haalo! raatri-",day;
+      }
+      day += 1;
     }
-
-    b += 1;
-  }
-
-aavje baka
+aavje baka 
 `;
 
 const Code = (props: Props) => {
@@ -87,14 +84,14 @@ const Code = (props: Props) => {
             onClick={executeCode}
             className="mx-2 flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-bhagwa-600 hover:bg-bhagwa-700 md:text-lg md:px-10 my-4 sm:my-8 sm:py-3 disabled:opacity-40"
           >
-            Chalavo
+            Code Chalav
           </button>
 
           <button
             onClick={clearCode}
             className="mx-2 flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-md text-bhagwa-700 bg-bhagwa-300 hover:bg-bhagwa-400 md:text-lg md:px-10 my-4 sm:my-8 sm:py-3"
           >
-            Clear
+            Bhusi Nakh
           </button>
         </div>
       </div>

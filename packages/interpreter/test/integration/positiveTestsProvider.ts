@@ -748,7 +748,7 @@ export const WithOutputPositiveTests = [
     input: `
       jo baka;
       jya sudhi (sachu) 
-        bas kar bhai;
+        roki de;
       bol baka "end";
       aavje baka;
     `,
@@ -761,10 +761,10 @@ export const WithOutputPositiveTests = [
       baka aa che a = 0;
       jya sudhi (a < 2) {
         jya sudhi (sachu)
-          bas kar bhai;
+          roki de;
         bol baka "hello";
         jo agar (sachu)
-          bas kar bhai;
+          roki de;
       }
       aavje baka;
     `,
@@ -778,9 +778,9 @@ export const WithOutputPositiveTests = [
       jya sudhi (a < 2) {
         bol baka "hello";
         jo agar (sachu)
-          bas kar bhai;
-        bas kar bhai;
-        bas kar bhai;
+          roki de;
+        roki de;
+        roki de;
       }
       aavje baka;
     `,
@@ -944,7 +944,7 @@ export const WithOutputPositiveTests = [
         step += 1;
         jo agar (a % 2 != 0){
           a -= 2;
-          agla dekh bhai;
+          chalva de;
         }
         a -= 1;
       }
@@ -963,10 +963,10 @@ export const WithOutputPositiveTests = [
         step += 1;
         jo agar (a % 2 == 0){
           a -= 2;
-          agla dekh bhai;
+          chalva de;
         }
         a -= 1;
-        agla dekh bhai;
+        chalva de;
         bol baka "oye oye oye.. yha tk nhi aana tha bhai";
       }
       bol baka step;
@@ -985,10 +985,10 @@ export const WithOutputPositiveTests = [
       jya sudhi (a > 0) {
         jo agar (a % 2 == 0){
           a -= 3;
-          agla dekh bhai;
+          chalva de;
         }
         a -= 1;
-        jo agar (step == 1) agla dekh bhai
+        jo agar (step == 1) chalva de
         step += 1;
       }
       bol baka step;

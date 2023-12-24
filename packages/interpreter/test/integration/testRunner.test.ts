@@ -127,7 +127,7 @@ test("whileStatement test with nested loops - 3, should success", () => {
         bol baka "bhai";
         b += 1;
         jo agar (b == 1)
-          bas kar bhai;
+          roki de;
       }
       a += 1;
     }
@@ -148,7 +148,7 @@ test("whileStatement test with nested loops - 4, should success", () => {
       bol baka a;
       a += 1;
       jo agar (a == 6) {
-        bas kar bhai;
+        roki de;
       }
     }
     bol baka "done";
@@ -172,7 +172,7 @@ test("whileStatement test with nested loops - 5, should success", () => {
       bol baka a;
       a += 1;
       jo agar (a == 6)
-        bas kar bhai;
+        roki de;
     }
     bol baka "done";
     aavje baka
@@ -195,7 +195,7 @@ test("whileStatement test with nested loops - 6, should success", () => {
       bol baka a;
       a += 1;
       jo agar (a == 3) {
-        bas kar bhai;
+        roki de;
       }
       bol baka "2 baar hi chapunga";
     }
@@ -258,7 +258,7 @@ test("if-else ladders one after the other, should be evaluated separately", () =
 //       bol baka a;
 //       a += 1;
 //       jo agar (a == 3) {
-//         bas kar bhai;
+//         roki de;
 //       }
 //       bol baka "2 baar hi chapunga";
 //     }

@@ -17,9 +17,9 @@ export const TokenTypes = {
 
   JAB_TAK_BHAI: "jya sudhi",
 
-  BAS_KAR_BHAI: "bas kar bhai",
+  BAS_KAR_BHAI: "roki de",
 
-  AGLA_DEKH_BHAI: "agla dekh bhai",
+  AGLA_DEKH_BHAI: "chalva de",
 
   NALLA_TYPE: "NALLA",
 
@@ -88,8 +88,8 @@ export const SPEC = [
   { regex: /^\bnahi toh\b/, tokenType: TokenTypes.WARNA_BHAI },
   { regex: /^\bnakkamo\b/, tokenType: TokenTypes.NALLA_TYPE },
   { regex: /^\bjya sudhi\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
-  { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
-  { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
+  { regex: /^\broki de\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
+  { regex: /^\bchalva de\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
 
   // Number
   { regex: /^[+-]?([\d]*[.])?[\d]+/, tokenType: TokenTypes.NUMBER_TYPE },
