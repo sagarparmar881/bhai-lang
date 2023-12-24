@@ -55,7 +55,7 @@ export default function Header() {
                 >
                   <span className="text-bhagwa-700"> @ristri </span>
                 </a>
-                taraf thi
+                taraf thi.
               </div>
               <div className="text-center text-gray-300 pt-6">
                 gujju version
@@ -66,7 +66,7 @@ export default function Header() {
                 >
                   <span className="text-bhagwa-700"> @sagarparmar881 </span>
                 </a>  
-                taraf thi           
+                taraf thi.           
               </div>
             </div>
           </main>
